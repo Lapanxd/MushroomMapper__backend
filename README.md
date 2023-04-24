@@ -13,7 +13,6 @@ Cela va créer un index géospatial de type "2dsphere" sur le champ "location", 
 ```
 db.geoPoints.createIndex({ location : "2dsphere" })
 ```
-***
 L'opérateur géospatial `$near` renvoie les documents qui sont géographiquement proche d'un point. Le `$maxdistance` défini le rayon autour du point.
 ```js
 db.geoPoints.find({
