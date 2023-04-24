@@ -20,6 +20,12 @@ class MushroomService {
     client.close();
     return mushrooms;
   }
+
+  async findByGeoPoint(lat, long){
+    const client = await MongoClient.connect(url);
+    const collection = client.db(dbName).collection(collectionName);
+
+  }
 }
 
 export const mushroomService = new MushroomService();
