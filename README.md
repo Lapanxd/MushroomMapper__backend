@@ -1,4 +1,4 @@
-# mushroomMapper_backend
+# mushroomMapper
 Pour trouver le document qui contient le `name`pour trouver les informations d'un champignon.
 ```js
 db.mushrooms.findOne({ name: name })
