@@ -10,7 +10,7 @@ insertOne({ location: { type: "Point", coordinates: [lat, long] } , mushroom_id:
 ```
 ***
 Cela va créer un index géospatial de type "2dsphere" sur le champ "location", permettant de faire des requêtes géospatiales telles que $geoNear.
-```
+```js
 db.geoPoints.createIndex({ location : "2dsphere" })
 ```
 L'opérateur géospatial `$near` renvoie les documents qui sont géographiquement proche d'un point. Le `$maxdistance` défini le rayon autour du point.
