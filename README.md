@@ -29,7 +29,7 @@ db.geoPoints.find({
 ```
 ***
 Pour définir ma `lat` et `lng` avec des variables 
-```
+```js
 lat = parseFloat(db.cities.findOne({city: "Paris"}).lat)
 lng = parseFloat(db.cities.findOne({city: "Paris"}).lng)
 ```
