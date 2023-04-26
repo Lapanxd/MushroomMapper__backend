@@ -1,4 +1,5 @@
 # mushroomMapper
+## La base de donnée
 Pour la map à coin à champignons nous avons utilisés une base de donnée MongoDB composée de 3 collections : `mushrooms`, `geoPoints` et `cities`. Les document mushrooms se présentent sous cette forme : 
 ```js 
 {
@@ -47,6 +48,8 @@ Et la collection cities est une collection qu'on nous avons récupéré sur un r
   "population_proper": "486828"
 }
 ```
+
+## Quelques requêtes
 
 Pour trouver le document qui contient le `name`pour trouver les informations d'un champignon.
 ```js
